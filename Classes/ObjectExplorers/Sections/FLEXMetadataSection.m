@@ -15,7 +15,7 @@
 #import "FLEXIvar.h"
 #import "NSArray+FLEX.h"
 #import "FLEXRuntime+UIKitHelpers.h"
-#import <FLEX/FLEX-Swift.h>
+#import "NSObject+IvarReflection.h"
 
 @interface FLEXMetadataSection ()
 @property (nonatomic, readonly) FLEXObjectExplorer *explorer;

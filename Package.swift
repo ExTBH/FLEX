@@ -17,7 +17,7 @@ let package = Package(
     name: "FLEX",
     platforms: platforms,
     products: [
-        .library(name: "FLEX", targets: ["FLEX"])
+        .library(name: "FLEX", targets: ["FLEX", "FLEXSwift"])
     ],
     targets: [
         .target(
@@ -34,6 +34,10 @@ let package = Package(
             ],
             publicHeadersPath: "Headers",
             cSettings: .headerSearchPaths + .warningFlags
+        ),
+        .target(
+            name: "FLEXSwift",
+            path: "FLEXSwift"
         )
     ],
     // Required to compile FLEXSwiftInternal.mm
