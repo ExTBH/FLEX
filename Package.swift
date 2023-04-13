@@ -17,6 +17,7 @@ let package = Package(
     name: "FLEX",
     platforms: platforms,
     products: [
+        // Swift and Obj-C have to be in separate targets to be able to import the Package
         .library(name: "FLEX", targets: ["FLEX", "FLEXSwift"])
     ],
     targets: [

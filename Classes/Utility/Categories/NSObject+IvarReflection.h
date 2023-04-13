@@ -2,14 +2,14 @@
 //  NSObject+IvarReflection.h
 //  
 //
-//  Created by Natheer on 13/04/2023.
+//  Created by ExTBH on 13/04/2023.
 //
 
 #import <Foundation/Foundation.h>
 
 
 @interface NSObject (IvarReflection)
-- (id)reflectIvarNamed:(NSString*)name;
+- (nullable id)reflectIvarNamed:( NSString* _Nonnull)name;
 
 @end
 
