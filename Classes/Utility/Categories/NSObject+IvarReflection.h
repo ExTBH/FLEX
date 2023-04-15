@@ -9,7 +9,7 @@
 
 
 @interface NSObject (IvarReflection)
-- (nullable id)reflectIvarNamed:( NSString* _Nonnull)name;
+- (id)reflectIvarNamed:( NSString*)name;
 
 @end
 

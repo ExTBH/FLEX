@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 @objc public extension NSObject {
     @objc func reflectIvarNamed(_ name: String) -> Any? {
         Mirror(reflecting: self)
